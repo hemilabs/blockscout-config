@@ -460,11 +460,11 @@
     "external": true,
     "title": "Demos",
     "logo": "https://raw.githubusercontent.com/hemilabs/blockscout-config/refs/heads/master/assets/demos.png",
-    "shortDescription": "Demos offers enhanced Web3 security with intuitive and robust sybil resistance solutions.",
+    "shortDescription": "Demos offers enhanced Web3 security with intuitive and robust Sybil resistance solutions.",
     "categories": ["Dev tooling", "Data & Analytics", "Governance & DAOs"],
-    "url": "https://demos.global/",
-    "description": "Demos offers enhanced Web3 security with intuitive and robust sybil resistance solutions.",
-    "site": "https://demos.global/",
-    "priority": 1
+    "author": "Demos",
+    "url": "https://app.demos.gloabl",
+    "description": "Demos offers enhanced Web3 security with intuitive and robust Sybil resistance solutions.",
+    "site": "https://www.demos.global"
   }
 ]
