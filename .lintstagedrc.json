@@ -1,0 +1,11 @@
+{
+  "!(*.js|marketplace/config.json|package.json)": [
+    "prettier --ignore-unknown --write"
+  ],
+  "*.js": ["eslint --cache --fix --quiet", "prettier --write"],
+  "marketplace/config.json": [
+    "node tools/sort-marketplace-config.js",
+    "prettier --write"
+  ],
+  "package.json": ["better-sort-package-json", "prettier --write"]
+}

@@ -1,0 +1,12 @@
+{
+  "json.schemas": [
+    {
+      "fileMatch": ["footer/links.json"],
+      "url": "./schemas/footer-links.json"
+    },
+    {
+      "fileMatch": ["marketplace/config.json"],
+      "url": "./schemas/marketplace-config.json"
+    }
+  ]
+}

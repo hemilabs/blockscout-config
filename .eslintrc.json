@@ -1,0 +1,12 @@
+{
+  "extends": ["bloq", "bloq/node", "prettier"],
+  "overrides": [
+    {
+      "files": ["*.test.js", "tools/*.js"],
+      "rules": {
+        "complexity": "off",
+        "node/no-unpublished-require": "off"
+      }
+    }
+  ]
+}
