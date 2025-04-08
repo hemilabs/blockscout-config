@@ -235,9 +235,9 @@
     "shortDescription": "Hemi Staking offers liquid staking solutions for the Hemi ecosystem.",
     "categories": ["Liquid staking"],
     "author": "Hemi Staking",
-    "url": "https://hemi.xyz/stake",
+    "url": "https://app.hemi.xyz/stake",
     "description": "Hemi Staking provides liquid staking options to support Hemi network participation.",
-    "site": "https://hemi.xyz/stake"
+    "site": "https://app.hemi.xyz/stake"
   },
   {
     "id": "vaultcraft",
@@ -463,7 +463,7 @@
     "shortDescription": "Demos offers enhanced Web3 security with intuitive and robust Sybil resistance solutions.",
     "categories": ["Dev tooling", "Data & Analytics", "Governance & DAOs"],
     "author": "Demos",
-    "url": "https://app.demos.gloabl",
+    "url": "https://app.demos.global",
     "description": "Demos offers enhanced Web3 security with intuitive and robust Sybil resistance solutions.",
     "site": "https://www.demos.global"
   }
