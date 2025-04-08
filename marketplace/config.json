@@ -235,9 +235,9 @@
     "shortDescription": "Hemi Staking offers liquid staking solutions for the Hemi ecosystem.",
     "categories": ["Liquid staking"],
     "author": "Hemi Staking",
-    "url": "https://hemi.staking.example",
+    "url": "https://hemi.xyz/stake",
     "description": "Hemi Staking provides liquid staking options to support Hemi network participation.",
-    "site": "https://hemi.staking.example"
+    "site": "https://hemi.xyz/stake"
   },
   {
     "id": "vaultcraft",
@@ -271,9 +271,9 @@
     "shortDescription": "IziSwap is a decentralized exchange for efficient token swaps.",
     "categories": ["Swaps"],
     "author": "IziSwap",
-    "url": "https://iziswap.example",
+    "url": "https://izumi.finance/trade/swap",
     "description": "IziSwap offers streamlined decentralized swapping services.",
-    "site": "https://iziswap.example"
+    "site": "https://izumi.finance/trade/swap"
   },
   {
     "id": "kelp",
@@ -319,9 +319,9 @@
     "shortDescription": "PassDEX is a decentralized exchange that bridges different blockchain ecosystems.",
     "categories": ["Swaps"],
     "author": "PassDEX",
-    "url": "https://passdex.finance",
+    "url": "https://passdex.finance/?chain=HEMI",
     "description": "PassDEX enables seamless cross-chain trading by bridging gaps between various blockchain networks.",
-    "site": "https://passdex.finance"
+    "site": "https://passdex.finance/?chain=HEMI"
   },
   {
     "id": "morpho",
@@ -331,9 +331,9 @@
     "shortDescription": "Morpho is a decentralized lending protocol that optimizes borrowing and lending rates.",
     "categories": ["Lending"],
     "author": "Morpho",
-    "url": "https://morpho.example",
+    "url": "https://app.morpho.org/ethereum/earn",
     "description": "Morpho streamlines decentralized lending and borrowing processes with optimized rates.",
-    "site": "https://morpho.example"
+    "site": "https://app.morpho.org/ethereum/earn"
   },
   {
     "id": "eisen-finance",
@@ -379,9 +379,9 @@
     "shortDescription": "Babypie is a liquid staking protocol offering accessible yield opportunities.",
     "categories": ["Liquid staking"],
     "author": "Babypie",
-    "url": "https://babypie.magpiexyz.io",
+    "url": "https://www.babylon.magpiexyz.io/stake",
     "description": "Babypie enables users to participate in liquid staking with streamlined processes and optimized yield generation.",
-    "site": "https://babypie.magpiexyz.io"
+    "site": "https://www.babylon.magpiexyz.io/stake"
   },
   {
     "id": "stakestone",
@@ -427,9 +427,9 @@
     "shortDescription": "Hemi Bros is an NFT platform for creating and trading unique digital collectibles.",
     "categories": ["NFTs"],
     "author": "Hemi Bros",
-    "url": "https://hemibros.example",
+    "url": "https://www.hemibros.xyz/",
     "description": "Hemi Bros offers a platform for artists and collectors to create, showcase, and trade NFTs.",
-    "site": "https://hemibros.example"
+    "site": "https://www.hemibros.xyz/"
   },
   {
     "id": "metamask",
