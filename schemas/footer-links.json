@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "items": {
+    "additionalProperties": false,
+    "properties": {
+      "links": {
+        "items": {
+          "additionalProperties": false,
+          "properties": {
+            "icon": { "type": "string" },
+            "iconSize": { "type": "string" },
+            "text": { "type": "string" },
+            "url": { "format": "uri", "type": "string" }
+          },
+          "required": ["text", "url"],
+          "type": "object"
+        },
+        "type": "array"
+      },
+      "title": { "type": "string" }
+    },
+    "required": ["title", "links"],
+    "type": "object"
+  },
+  "type": "array"
+}

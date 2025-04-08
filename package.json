@@ -1,0 +1,29 @@
+{
+  "scripts": {
+    "ci-checks": "eslint --max-warnings 0 . && prettier --check .",
+    "prepare": "husky",
+    "test": "node --test"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.8.0",
+    "better-sort-package-json": "^1.1.1",
+    "commitlint-config-bloq": "^1.1.0",
+    "eslint": "^8.57.1",
+    "eslint-config-bloq": "^4.5.0",
+    "husky": "^9.1.7",
+    "json-stable-stringify": "^1.2.1",
+    "jsonschema": "^1.5.0",
+    "lint-staged": "^15.5.0",
+    "prettier": "^3.5.3"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "devEngines": {
+    "runtime": {
+      "name": "node",
+      "onFail": "warn",
+      "version": "22"
+    }
+  }
+}
