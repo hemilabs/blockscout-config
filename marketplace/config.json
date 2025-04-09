@@ -336,18 +336,6 @@
     "url": "https://www.satoshiprotocol.org/"
   },
   {
-    "id": "satoshi-protocol",
-    "author": "Satoshi Protocol",
-    "categories": ["CDPs"],
-    "description": "Satoshi Protocol uses Bitcoin as collateral to mint its native stablecoin, satUSD, offering a unique approach to stablecoin issuance.",
-    "external": true,
-    "logo": "https://raw.githubusercontent.com/hemilabs/blockscout-config/refs/heads/master/assets/satoshi.png",
-    "shortDescription": "Satoshi Protocol is the first universal stablecoin protocol backed by Bitcoin.",
-    "site": "https://www.satoshiprotocol.org/",
-    "title": "Satoshi Protocol",
-    "url": "https://www.satoshiprotocol.org/"
-  },
-  {
     "id": "stakestone",
     "author": "StakeStone",
     "categories": ["Bridges", "Liquid staking"],
