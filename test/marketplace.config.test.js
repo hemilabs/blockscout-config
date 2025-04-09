@@ -23,6 +23,9 @@ test("Marketplace config is well formed", function () {
 
 marketplaceConfig.forEach(function (app, i) {
   test(`App ${i}: ${app.id}`, async function () {
+    const duplicateApps = marketplaceConfig.filter((a) => a.id === app.id);
+    assert(duplicateApps.length === 1, `Duplicate app id: ${app.id}`);
+
     const githubBaseUrl =
       "https://raw.githubusercontent.com/hemilabs/blockscout-config" +
       "/refs/heads/master/";
