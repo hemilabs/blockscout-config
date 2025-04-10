@@ -1,3 +1,4 @@
 #!/usr/bin/env sh
 
+npm run ci-checks
 npm test
