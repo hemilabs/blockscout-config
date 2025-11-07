@@ -283,9 +283,9 @@
     "external": true,
     "logo": "https://raw.githubusercontent.com/hemilabs/blockscout-config/refs/heads/master/assets/purefinance.png",
     "shortDescription": "Pure Finance is a set of EVM tools and smart contracts offering solutions for developers, DeFi applications, and individuals alike.",
-    "site": "https://purefinance.hemi.xyz/",
+    "site": "https://pure.finance/",
     "title": "Pure Finance",
-    "url": "https://purefinance.hemi.xyz/"
+    "url": "https://pure.finance/"
   },
   {
     "id": "rabby",
