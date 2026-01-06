@@ -11,8 +11,10 @@ const schema = require("../schemas/marketplace-config.json");
 // Disable TLS certificate validation for testing purposes only!
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
 
+// Check if a URL is reachable. The User-Agent header is set to avoid being
+// blocked by some services' security policies that block `fetch`, `curl`, etc.
 const isReachable = (url) =>
-  fetch(url)
+  fetch(url, { headers: { "User-Agent": "DoNotBlockMe/1.0" } })
     .then((response) => response.ok)
     .catch(() => false);
 
