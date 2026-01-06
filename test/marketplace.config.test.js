@@ -13,10 +13,16 @@ process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
 
 // Check if a URL is reachable. The User-Agent header is set to avoid being
 // blocked by some services' security policies that block `fetch`, `curl`, etc.
-const isReachable = (url) =>
+const assertIsReachable = (url, errorMessage) =>
   fetch(url, { headers: { "User-Agent": "DoNotBlockMe/1.0" } })
-    .then((response) => response.ok)
-    .catch(() => false);
+    .then(function (response) {
+      if (!response.ok) {
+        throw new Error(`${response.status} ${response.statusText}`);
+      }
+    })
+    .catch(function (error) {
+      throw new Error(`${errorMessage}: ${error.message}`);
+    });
 
 test("Marketplace config is well formed", function () {
   const validation = validate(marketplaceConfig, schema);
@@ -35,28 +41,28 @@ marketplaceConfig.forEach(function (app, i) {
       const path = app.logo.replace(githubBaseUrl, "");
       assert(fs.existsSync(path), "Logo file is missing in the repo");
     } else {
-      assert(await isReachable(app.logo), "Logo is unreachable");
+      await assertIsReachable(app.logo, "Logo is unreachable");
     }
 
-    assert(await isReachable(app.url), "URL is unreachable");
+    await assertIsReachable(app.url, "URL is unreachable");
 
     if (app.site) {
-      assert(await isReachable(app.site), "Site is unreachable");
+      await assertIsReachable(app.site, "Site is unreachable");
     }
     // @ts-ignore
     if (app.github) {
       // @ts-ignore
-      assert(await isReachable(app.github), "GitHub link is unreachable");
+      await assertIsReachable(app.github, "GitHub link is unreachable");
     }
     // @ts-ignore
     if (app.telegram) {
       // @ts-ignore
-      assert(await isReachable(app.telegram), "Telegram link is unreachable");
+      await assertIsReachable(app.telegram, "Telegram link is unreachable");
     }
     // @ts-ignore
     if (app.twitter) {
       // @ts-ignore
-      assert(await isReachable(app.twitter), "X (Twitter) link is unreachable");
+      await assertIsReachable(app.twitter, "X (Twitter) link is unreachable");
     }
   });
 });
