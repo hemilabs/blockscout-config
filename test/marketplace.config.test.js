@@ -17,6 +17,15 @@ const assertIsReachable = (url, errorMessage) =>
   fetch(url, { headers: { "User-Agent": "DoNotBlockMe/1.0" } })
     .then(function (response) {
       if (!response.ok) {
+        // Check if access is blocked by a Cloudflare challenge, which is used to
+        // prevent automated access. If this is the case, let's assume URL is OK.
+        if (
+          response.status === 403 &&
+          response.headers.get("cf-mitigated") === "challenge"
+        ) {
+          return;
+        }
+
         throw new Error(`${response.status} ${response.statusText}`);
       }
     })
