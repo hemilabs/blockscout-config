@@ -240,18 +240,6 @@
     "url": "https://oooo.money"
   },
   {
-    "id": "passdex",
-    "author": "PassDEX",
-    "categories": ["Swaps"],
-    "description": "PassDEX enables seamless cross-chain trading by bridging gaps between various blockchain networks.",
-    "external": true,
-    "logo": "https://raw.githubusercontent.com/hemilabs/blockscout-config/refs/heads/master/assets/passdex.png",
-    "shortDescription": "PassDEX is a decentralized exchange that bridges different blockchain ecosystems.",
-    "site": "https://passdex.finance/?chain=HEMI",
-    "title": "PassDEX",
-    "url": "https://passdex.finance/?chain=HEMI"
-  },
-  {
     "id": "pell",
     "author": "Pell Network",
     "categories": ["Liquid staking"],
