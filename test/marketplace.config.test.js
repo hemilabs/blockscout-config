@@ -1,5 +1,6 @@
 "use strict";
 
+const { Agent } = require("undici");
 const { test } = require("node:test");
 const { validate } = require("jsonschema");
 const assert = require("assert");
@@ -14,7 +15,10 @@ process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
 // Check if a URL is reachable. The User-Agent header is set to avoid being
 // blocked by some services' security policies that block `fetch`, `curl`, etc.
 const assertIsReachable = (url, errorMessage) =>
-  fetch(url, { headers: { "User-Agent": "DoNotBlockMe/1.0" } })
+  fetch(url, {
+    dispatcher: new Agent({ connect: { family: 4 } }),
+    headers: { "Accept-Language": "en", "User-Agent": "Mozilla/5.0" },
+  })
     .then(function (response) {
       if (!response.ok) {
         // Check if access is blocked by a Cloudflare challenge, which is used to
